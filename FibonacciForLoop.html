@@ -1,0 +1,26 @@
+<! --Largest number of 3 using nested if statements-->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Fibonacci array</title>
+  </head>
+
+  <body>
+    <script type="text/javascript">
+      n = Number(prompt("Enter the number of elements: "));
+      n1 = 1;
+      n2 = -1;
+      document.write(
+        "<strong>The fibonacci series for " + n + " terms is : </strong>"
+      );
+      for (i = 1; i <= n; i++) {
+        s = n1 + n2;
+        n2 = n1;
+        n1 = s;
+        document.write(s + " ");
+      }
+    </script>
+  </body>
+</html>

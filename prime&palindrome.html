@@ -1,0 +1,47 @@
+<! --enter an integer no, define  func to check the no is prime or comp, define another func to check the no is palindrome or not-->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>prime & palindrome</title>
+    <script type="text/javascript">
+      function prime(n) {
+        f = 0;
+        for (i = 2; i < n / 2 + 1; i++) {
+          if (n % i == 0) {
+            f = 1;
+          }
+        }
+        if (f == 0) {
+          return "Prime";
+        } else {
+          return "Composite";
+        }
+      }
+      function palin(n) {
+        s = 0;
+        t = n;
+        while (n > 0) {
+          r = n % 10;
+          s = s * 10 + r;
+          n = Math.floor(n / 10);
+        }
+        if (t == s) {
+          return "Palinrome";
+        } else {
+          return "Not a palindrome";
+        }
+      }
+    </script>
+  </head>
+
+  <body>
+    <h3>Checking Prime & Palindrome</h3>
+    <script type="text/javascript">
+      n = Number(prompt("Enter a number : "));
+      document.write("The number " + n + " is : " + prime(n) + "<br>");
+      document.write("The number " + n + " is : " + palin(n));
+    </script>
+  </body>
+</html>

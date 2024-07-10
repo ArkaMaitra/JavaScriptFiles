@@ -1,0 +1,23 @@
+<! --Largest number of 3 using nested if statements-->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Sum of the digits</title>
+</head>
+
+<body>
+<script type="text/javascript">
+n = Number(prompt("Enter the number : "))
+s = 0
+document.write("<strong>The Sum of the digits of "+ n + " is : </strong>")
+    while(n>0) {
+        t = n % 10
+        s = s + t
+        n = Math.floor(n/10)
+    }
+document.write(s + " ")
+</script>
+</body>
+</html>

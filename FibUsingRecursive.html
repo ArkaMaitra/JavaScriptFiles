@@ -1,0 +1,29 @@
+<! --Fibonacci of n terms using recursive-->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Fibonacci</title>
+    <script type="text/javascript">
+      function fib(n) {
+        if (n == 0 || n == 1) {
+          return n;
+        } else {
+          return fib(n - 1) + fib(n - 2);
+        }
+      }
+    </script>
+  </head>
+
+  <body>
+    <h3>Fibonacci using Recurscive</h3>
+    <script type="text/javascript">
+      n = Number(prompt("Enter a number : "));
+      document.write("The Fibonacci of " + n + " terms is : <br>");
+      for (i = 0; i < n; i++) {
+        document.write(fib(i) + " ");
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+<! --Selection Sort-->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Linear Search</title>
+  </head>
+
+  <body>
+    <script type="text/javascript">
+      a = Array();
+      c = 0;
+      n = Number(prompt("Enter number of elements : "));
+      for (i = 0; i < n; i++) {
+        a[i] = Number(prompt("Enter the value of elements : "));
+      }
+      x = Number(prompt("Enter number to be searched : "));
+      for (i = 0; i < n; i++) {
+        if (x != a[i]) {
+          continue;
+        } else {
+          document.write(
+            "\nThe number " + x + " is found at position " + (i + 1)
+          );
+          c = 1;
+          break;
+        }
+      }
+      if (c == 0) {
+        document.write("The number " + x + " is not found");
+      }
+    </script>
+  </body>
+</html>

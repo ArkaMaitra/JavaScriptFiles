@@ -1,0 +1,33 @@
+<! --Enter 10 numbers ito a array, WAP to print avg and max-->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Fibonacci series with Array</title>
+  </head>
+
+  <body>
+    <script type="text/javascript">
+      a = Array();
+      n = Number(prompt("Enter the number of elements: "));
+      for (i = 0; i < n; i++) {
+        a[i] = Number(prompt("Enter the value in elements : "));
+      }
+      Sum = 0;
+      for (i = 0; i < n; i++) {
+        Sum = Sum + a[i];
+      }
+      Avg = Sum / n;
+      Max = 0;
+      for (i = 0; i < n; i++) {
+        if (a[i] > Max) {
+          Max = a[i];
+        }
+        i++;
+      }
+      document.write("The Average of the numbers are : " + Avg);
+      document.write("\nThe Max of the numbers are : " + Max);
+    </script>
+  </body>
+</html>

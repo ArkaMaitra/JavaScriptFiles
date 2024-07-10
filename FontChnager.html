@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+  <head>
+    <title>Change Font Style</title>
+    <script>
+      function fontName() {
+        document.getElementById("p").style.fontFamily =
+          document.getElementById("p1").value;
+        document.getElementById("p").style.fontSize =
+          document.getElementById("p2").value + "px";
+        document.getElementById("p").style.color =
+          document.getElementById("p3").value;
+      }
+    </script>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <td>Font Name:</td>
+        <td>
+          <input type="text" id="p1" />
+        </td>
+      </tr>
+      <tr>
+        <td>Font Size:</td>
+        <td>
+          <input type="number" id="p2" />
+        </td>
+      </tr>
+      <tr>
+        <td>Font Color:</td>
+        <td>
+          <input type="color" id="p3" />
+        </td>
+      </tr>
+    </table>
+    <center><input type="button" onclick="fontName()" value="Change" /></center>
+    <p>
+      __________________________________________________________________________________________
+    </p>
+    <p id="p">
+      "Conflict" is a 1983 stop-motion cartoon directed by Garri Bardin, a
+      renowned Soviet and Russian animation director. The film is a Cold War
+      allegory where two groups of matches, separated by an arbitrary boundary,
+      escalate a minor dispute into a global conflict. The matchsticks are
+      initially from the same matchbox, symbolizing the arbitrary nature of the
+      conflict. The film culminates in a nuclear strike, leaving the matchsticks
+      charred and lifeless. The film received a 7.8/10 rating on IMDb and was a
+      huge success despite not being approved by the State Film Agency due to
+      its pacifist message
+    </p>
+  </body>
+</html>

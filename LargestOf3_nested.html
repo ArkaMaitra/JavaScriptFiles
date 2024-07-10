@@ -1,0 +1,33 @@
+<! --Largest number of 3 using nested if statements-->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Largest of 3 using</title>
+</head>
+
+<body>
+<script type="text/javascript">
+    a = prompt("Enter the 1st number : ")
+    b = prompt("Enter the 2nd number : ")
+    c = prompt("Enter the 3rd number : ")
+    if(a > b) {
+        if(a > c) {
+            document.write("<br><center><strong>"+ a +" is the largest number.</center></strong>");
+        }
+        else {
+            document.write("<br><center><strong>"+ c +" is the largest number.</center></strong>");
+        }
+    }
+    else {
+        if(b > c) {
+            document.write("<br><center><strong>"+ b +" is the largest number.</center></strong>");
+        }
+        else{
+            document.write("<br><center><strong>"+ c +" is the largest number.</center></strong>");
+        }
+    }
+</script>
+</body>
+</html>

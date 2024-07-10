@@ -1,0 +1,39 @@
+<! --krishnamurti no using nested func-->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Checking Sum is Prime or not</title>
+
+    <script type="text/javascript">
+      function prime(a) {
+        f = 0;
+        for (j = 2; j < a; j++) {
+          if (a % j == 0) {
+            f = 1;
+            break;
+          }
+        }
+        if (f == 0) {
+          document.write(a + " ");
+        }
+      }
+      function factor(n) {
+        for (i = 2; i <= n; i++) {
+          if (n % i == 0) {
+            prime(i);
+          }
+        }
+      }
+    </script>
+  </head>
+
+  <body>
+    <h3>Prime Factors</h3>
+    <script type="text/javascript">
+      n = Number(prompt("Enter a number : "));
+      factor(n);
+    </script>
+  </body>
+</html>

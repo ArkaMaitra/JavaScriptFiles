@@ -1,0 +1,30 @@
+<! --Bubble Sort-->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Bubble Sort</title>
+  </head>
+
+  <body>
+    <script type="text/javascript">
+      a = Array();
+      max = 0;
+      n = Number(prompt("Enter number of elements : "));
+      for (i = 0; i < n; i++) {
+        a[i] = Number(prompt("Enter the value of elements : "));
+      }
+      for (i = 0; i < n; i++) {
+        for (j = i + 1; j < n; j++) {
+          if (a[i] > a[j]) {
+            temp = a[i];
+            a[i] = a[j];
+            a[j] = temp;
+          }
+        }
+      }
+      document.write("\nThe Max of the numbers are : " + a + " ");
+    </script>
+  </body>
+</html>

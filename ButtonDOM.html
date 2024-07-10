@@ -1,0 +1,18 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Example Program of DOM</title>
+  </head>
+
+  <body>
+    <p id="p1"></p>
+    <p id="p2">This Paragraph is called by the button</p>
+    <button onclick>Submit</button>
+
+    <script>
+      document.getElementById("p1").innerHTML =
+        document.getElementById("p2").innerHTML;
+    </script>
+  </body>
+</html>
